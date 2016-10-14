@@ -1,0 +1,5 @@
+<p>
+  <%=content_tag(:label, l(:label_start_path))%>
+  <%=text_field_tag 'settings[start]', @settings['start'], :size => 60 %><br/>
+  <%=content_tag(:span, l(:text_start_path_note), :class => 'info')%>
+</p>

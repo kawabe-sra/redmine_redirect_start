@@ -1,0 +1,4 @@
+# English strings go here for Rails i18n
+ja:
+  label_start_path: "スタートページのパス名:"
+  text_start_path_note: "例: /my/page, /projects, /issues"
