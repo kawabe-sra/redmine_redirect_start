@@ -6,7 +6,7 @@ Redmine::Plugin.register :redmine_redirect_start do
   author 'Y. kawabe'
   description 'This redmine plugin redirect redmine start page.'
   author_url 'http://www.projdepot.jp/'
-  version '0.1.0'
+  version '0.2.0'
 
   settings :partial => 'settings/redmine_redirect_start_settings',
     :default => { 'start' => '' }

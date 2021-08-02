@@ -4,7 +4,12 @@ module RedmineRedirectStartPatch
         base.send(:include, RediretWelcomeController)
         base.class_eval do
             unloadable
-            alias_method_chain :index, :redirect_start
+            if Rails::VERSION::MAJOR >= 5
+                alias_method :index_without_redirect_start, :index
+                alias_method :index, :index_with_redirect_start
+            else
+                alias_method_chain :index, :redirect_start
+            end
         end
     end
 
