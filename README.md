@@ -1,6 +1,6 @@
 # redmine_redirect_start
 Redmine plugin to redirect Start page
 
-This plugin works for Redmine 3.x, 4.x, 5.x.
+This plugin works for Redmine 3.x, 4.x, 5.x, 6.x.
 
 You can set redirect page on plugin settings page.
